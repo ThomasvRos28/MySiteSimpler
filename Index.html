@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#101923] dark group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#223549] px-10 py-3">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
+              </svg>
+            </div>
+            <a href="index.html" class="text-white text-lg font-bold leading-tight tracking-[-0.015em] hover:underline">
+              Thomas van Rossum
+            </a>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="About.html">About</a>
+              <a class="text-white text-sm font-medium leading-normal" href="Projects.html">Projects</a>
+              <a class="text-white text-sm font-medium leading-normal" href="Contact.html">Contact</a>
+            </div>
+          </div>
+        </header>
+
+       <!-- Hero section with custom image -->
+<div class="px-40 flex flex-1 justify-center py-5">
+  <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+    <div class="@container">
+      <div class="@[480px]:p-4">
+        <div
+          class="relative flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+          style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCe8adstEI8IYilx9n5qtGPTn971rf2EzdR29Of-Xbajy01VQKR_qfFbTLVqyddXDGxB4YI4_hv6Ae84JfVEbOmAK-C0FCwG_gVPv0Sytr31tv5VgFqG3XpZF1wLAh7PSwPDRsRtTVeEGyl2aN29ziC4AiVxDlBhq17aVggRVOaEZ_FfsFsMswO8nFkjm4-8bgE9RuVQi2U38jDG268f0_feFcw8yNGTvKoU5cTnOqF0TJ-F4Z-ifKYhFcEeinCEF5YoevCGBxvSAsv");'
+        >
+          <!-- Profile image overlay -->
+          <div class="flex items-center justify-end h-full w-full z-10">
+            <div class="rounded-full w-[21rem] h-[21rem] @[480px]:w-[26.25rem] @[480px]:h-[26.25rem] border-4 border-[#101923] shadow-lg overflow-hidden flex items-center justify-center">
+              <img
+                src="images/LogoNew.png"
+                alt="Profile Photo"
+                class="w-full h-full object-cover"
+                style="transform: scale(1.22);"
+              />
+            </div>
+          </div>
+
+          <!-- Text content -->
+          <div class="absolute top-10 left-10 z-10 flex flex-col gap-2 text-left">
+            <h1 class="text-white text-4xl @[480px]:text-5xl font-black leading-tight tracking-[-0.033em]">
+              MERN &<br />
+              Automation Expert
+            </h1>
+            <h2 class="text-white text-sm @[480px]:text-base font-normal leading-normal">
+              Transforming ideas into reality with cutting-edge <br />
+              web solutions and AI-powered automations.
+            </h2>          
+            <button class="mt-4 w-fit px-5 py-2 rounded-full bg-[#223549] text-white text-sm font-medium hover:bg-[#2e4763] transition">
+              Check out some of my latest projects!
+            </button>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured Projects</h2>
+
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-xl bg-[#182634] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-white text-base font-bold leading-tight">PO Management Dashboard</p>
+                    <p class="text-[#90accb] text-sm font-normal leading-normal">
+                      A comprehensive dashboard for managing purchase orders, streamlining workflows, and enhancing efficiency. Technologies used: MERN, Socket.io, Tailwind.
+                    </p>
+                  </div>
+                  <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 flex-row-reverse bg-[#223549] text-white text-sm font-medium leading-normal w-fit">
+                    <span class="truncate">View Project</span>
+                  </button>
+                </div>
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYvnNPs6tH_L7I7d1tvqe1iZ3ds0hdRG8s42oUQoaysqFGOZyojn6NfhvYJOOSnN5rTh4U8QWJ_Twk7z1V1dnSUEgX59AsPRNLHiy40T-o6zet3lUH3zkPGuheZuKfxJoS0aWi81xbnJ5JfzUi7c7luKbf_4tnj7BEhNAvM41Tm82ZHK0TPDcJz8RAeuzxgc_wMrUGCuR4nAnHocbhyYVyvwUx3XHoe3u_VJgab3EKL03b3K060uXZ-tFpIUiyIMH-Q_KUr_Kyl15U");'>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-xl bg-[#182634] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-white text-base font-bold leading-tight">AI Contract Reviewer</p>
+                    <p class="text-[#90accb] text-sm font-normal leading-normal">
+                      An AI-powered tool that automates contract reviews, identifies potential risks, and ensures compliance. Technologies used: AI, Python, NLP.
+                    </p>
+                  </div>
+                  <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 flex-row-reverse bg-[#223549] text-white text-sm font-medium leading-normal w-fit">
+                    <span class="truncate">View Project</span>
+                  </button>
+                </div>
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD-UBmJLwwRY4aqnVfturdfPJ9AehsWT_XGua8e4IyZca46_5Zn0_Dy-aMMKgy6k8lukO3Sr8qfPAsGL29frtn5XuUzlmzPyhAKRGLrbmSEvBwfgpDO38Mdn3y1QqxJbhExVXpwiuc0RI-_ADrijVTp41ynZ0yu56FKTcSPu4GJyn8YNszjfKeXCjavUxLKNnH2l7uPr-p2WKIehY4Syizi62LuVw3N31ounMjILGO1xVpOOO6DVk0sEpXNooAPkI0DRFCt8jGv8Bnk");'>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
